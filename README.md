@@ -58,6 +58,9 @@ See [here](https://github.com/golang/go/wiki/Modules) for `go mod` details.
 Then, check out the project and run `make` to compile the binary:
 
 ~~~
+$ curl -OL https://golang.org/dl/go1.20.3.linux-amd64.tar.gz
+$ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.3.linux-amd64.tar.gz
+$ export PATH=$PATH:/usr/local/go/bin
 $ git clone https://github.com/coredns/coredns
 $ cd coredns
 $ make
